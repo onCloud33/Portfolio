@@ -1,11 +1,19 @@
-import './App.css';
-import { Navbar, Container, Nav } from 'react-bootstrap'
+ /*eslint-disable*/ 
+
+import './css/App.css';
+import { Navbar, Container, Nav, Button } from 'react-bootstrap'
+import {About} from './js/About.js'
 
 function App() {
   return (
     <div className="App">
       <TopNavbar />
- 
+      <div className="home-wrap">
+        <div>Front-end Developer</div>
+        <div>Ryoung's Portfolio</div>
+        <Button className="contact-btn">Contact Me</Button>
+      </div>
+      <About />
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.navbar-wrap {
+  background-color: #fffeb7;
+  
+}
+
+.me-auto {
+  margin-right: 0!important;
+}
+
+.home-wrap {
+  background-color: #fffeb7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-btn {
+  background-color: #ffadad;
+  border: 0px solid;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 3px solid #ffdac7;
+  font-weight: 600;
+  font-size: 22px;
+}
