@@ -14,6 +14,8 @@ function App() {
         <Button className="contact-btn">Contact Me</Button>
       </div>
       <About />
+      <Skills />
+
     </div>
   );
 }
@@ -23,18 +25,36 @@ function TopNavbar() {
     <>
       <Navbar className="navbar-wrap">
         <Container>
-        <Navbar.Brand href="#home">RyoungE</Navbar.Brand>
+        <Navbar.Brand href="">RyoungE</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#home">About</Nav.Link>
-          <Nav.Link href="#home">Skills</Nav.Link>
-          <Nav.Link href="#home">Project</Nav.Link>
-          <Nav.Link href="#home">Contact</Nav.Link>
+          <Nav.Link href="">Home</Nav.Link>
+          <Nav.Link href="">About</Nav.Link>
+          <Nav.Link href="">Skills</Nav.Link>
+          <Nav.Link href="">Project</Nav.Link>
+          <Nav.Link href="">Contact</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
     </>
   );
+}
+
+function Skills() {
+  return (
+    <div className="skills-wrap wrap">
+      <div className="title">Skills</div>
+      <div className="icon-wrap">
+        <img src="img/html.png" class="icon"></img>
+        <img src="img/css.png" class="icon"></img>
+        <img src="img/js.png" class="icon"></img>
+        <img src="img/react.png" class="icon"></img>
+        <img src="img/django.svg" class="icon"></img>
+        <img src="img/python.png" class="icon"></img>
+        <img src="img/c.png" class="icon"></img>
+
+      </div>
+    </div>
+  )
 }
 
 export default App;

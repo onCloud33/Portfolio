@@ -1,3 +1,5 @@
+/* navbar */
+
 .navbar-wrap {
   background-color: #fffeb7;
   
@@ -6,6 +8,8 @@
 .me-auto {
   margin-right: 0!important;
 }
+
+/* home */
 
 .home-wrap {
   background-color: #fffeb7;
@@ -21,9 +25,35 @@
   border: 0px solid;
 }
 
+/* 공통 */
+
 .title {
   text-align: center;
   border-bottom: 3px solid #ffdac7;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 30px;
+  color: #ff8888;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+} 
+
+/* skills */
+.icon-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+.icon {
+  height: 100px;
+  margin: 10px;
 }

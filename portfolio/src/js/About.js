@@ -2,7 +2,7 @@ import '../css/About.css'
 
 function About() {
     return(
-        <div className="About-wrap">
+        <div className="About-wrap wrap">
             <div className="title">About Me</div>
             <div className="about-content">
                 <img src='img/나.jpg' alt="" className="my-img"></img>
