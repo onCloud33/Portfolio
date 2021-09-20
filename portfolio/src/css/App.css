@@ -2,7 +2,10 @@
 
 .navbar-wrap {
   background-color: #fffeb7;
-  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 .me-auto {
@@ -17,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .contact-btn {
@@ -33,6 +36,7 @@
   font-weight: 600;
   font-size: 30px;
   color: #ff8888;
+  margin: 10px;
 }
 
 .wrap {
@@ -57,3 +61,4 @@
   height: 100px;
   margin: 10px;
 }
+

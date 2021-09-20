@@ -3,6 +3,7 @@
 import './css/App.css';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import {About} from './js/About.js'
+import {Project} from './js/Project.js'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </div>
       <About />
       <Skills />
+      <Project />
 
     </div>
   );
@@ -30,7 +32,7 @@ function TopNavbar() {
           <Nav.Link href="">Home</Nav.Link>
           <Nav.Link href="">About</Nav.Link>
           <Nav.Link href="">Skills</Nav.Link>
-          <Nav.Link href="">Project</Nav.Link>
+          <Nav.Link href="">Projects</Nav.Link>
           <Nav.Link href="">Contact</Nav.Link>
         </Nav>
         </Container>
@@ -44,13 +46,13 @@ function Skills() {
     <div className="skills-wrap wrap">
       <div className="title">Skills</div>
       <div className="icon-wrap">
-        <img src="img/html.png" class="icon"></img>
-        <img src="img/css.png" class="icon"></img>
-        <img src="img/js.png" class="icon"></img>
-        <img src="img/react.png" class="icon"></img>
-        <img src="img/django.svg" class="icon"></img>
-        <img src="img/python.png" class="icon"></img>
-        <img src="img/c.png" class="icon"></img>
+        <img src="img/html.png" className="icon"></img>
+        <img src="img/css.png" className="icon"></img>
+        <img src="img/js.png" className="icon"></img>
+        <img src="img/react.png" className="icon"></img>
+        <img src="img/django.svg" className="icon"></img>
+        <img src="img/python.png" className="icon"></img>
+        <img src="img/c.png" className="icon"></img>
 
       </div>
     </div>
