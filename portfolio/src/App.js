@@ -4,6 +4,7 @@ import './css/App.css';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import {About} from './js/About.js'
 import {Project} from './js/Project.js'
+import "animate.css"
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <TopNavbar />
       <div className="blank"><a name="home"></a></div>
         <div className="home-wrap">
-          <div>Front-end Developer</div>
-          <div className="home-title">Ryoung's Portfolio</div>
+          <div className="animate__animated animate__zoomIn">Front-end Developer</div>
+          <div className="home-title animate__animated animate__zoomIn">Ryoung's Portfolio</div>
           <Button className="contact-btn" href="#contact">Contact Me</Button>
         </div>
         <div className="blank"><a name="about"></a></div>
@@ -32,7 +33,7 @@ function TopNavbar() {
     <>
       <Navbar className="navbar-wrap">
         <Container>
-        <Navbar.Brand href="#home">Ryoung <span>ε</span></Navbar.Brand>
+        <Navbar.Brand href="#home">Ryoung E</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
@@ -48,16 +49,16 @@ function TopNavbar() {
 
 function Skills() {
   return (
-    <div className="skills-wrap wrap">
+    <div className="skills-wrap wrap" data-aos="fade-in" data-aos-duration="2000">
       <div className="title">Skills</div>
       <div className="icon-wrap">
-        <img src="img/html.png" className="icon"></img>
-        <img src="img/css.png" className="icon"></img>
-        <img src="img/js.png" className="icon"></img>
-        <img src="img/react.png" className="icon"></img>
-        <img src="img/django.svg" className="icon"></img>
-        <img src="img/python.png" className="icon"></img>
-        <img src="img/c.png" className="icon"></img>
+        <img src="img/html.png" className="icon hvr-grow"></img>
+        <img src="img/css.png" className="icon hvr-grow"></img>
+        <img src="img/js.png" className="icon hvr-grow"></img>
+        <img src="img/react.png" className="icon hvr-grow"></img>
+        <img src="img/django.svg" className="icon hvr-grow"></img>
+        <img src="img/python.png" className="icon hvr-grow"></img>
+        <img src="img/c.png" className="icon hvr-grow"></img>
 
       </div>
     </div>

@@ -15,6 +15,13 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    
+}
+
+button {
+    border-radius: 5px;
+    font-size: 10px;
+    margin-top: 15px;
 }
 
 /* 프로젝트 별로 따로 */
@@ -48,23 +55,23 @@
 .project3 {
     width: 80%;
     height: 250px;
-    background-image: url('./img/codok.png');
+    background-image: url('./img/me.png');
     background-size: cover;
     margin: 15px auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .toggle0{
-    height: 700px;
+    height: 850px;
 }
 .toggle1{
-    height: 700px;
+    height: 800px;
 }
 .toggle2{
     height: 700px;
 }
 .toggle3{
-    height: 700px;
+    height: 500px;
 }
 /*  */
 .background {
@@ -86,8 +93,8 @@
 }
 
 .background .pro-title {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 27px;
+    font-weight: 600;
     
 }
 
@@ -100,5 +107,21 @@
 .toggle-wrap {
     width: 100%;
     background-color: white;
+    padding: 20px;  
+}
+
+.toggle-header {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ffdac7;
+    width: fit-content;
+    padding: 7px;
     
+}
+
+.toggle-title {
+    font-size: 20px;
+    font-weight: 600;
 }
