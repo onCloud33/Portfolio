@@ -9,15 +9,20 @@ function App() {
   return (
     <div className="App">
       <TopNavbar />
-      <div className="home-wrap">
-        <div>Front-end Developer</div>
-        <div>Ryoung's Portfolio</div>
-        <Button className="contact-btn">Contact Me</Button>
-      </div>
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
+      <div className="blank"><a name="home"></a></div>
+        <div className="home-wrap">
+          <div>Front-end Developer</div>
+          <div className="home-title">Ryoung's Portfolio</div>
+          <Button className="contact-btn" href="#contact">Contact Me</Button>
+        </div>
+        <div className="blank"><a name="about"></a></div>
+        <About />
+        <div className="blank"><a name="skills"></a></div>
+        <Skills />
+        <div className="blank"><a name="projects"></a></div>
+        <Project />
+        <div className="blank"><a name="contact"></a></div>
+        <Contact />
     </div>
   );
 }
@@ -27,13 +32,13 @@ function TopNavbar() {
     <>
       <Navbar className="navbar-wrap">
         <Container>
-        <Navbar.Brand href="">RyoungE</Navbar.Brand>
+        <Navbar.Brand href="#home">Ryoung <span>ε</span></Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="">Home</Nav.Link>
-          <Nav.Link href="">About</Nav.Link>
-          <Nav.Link href="">Skills</Nav.Link>
-          <Nav.Link href="">Projects</Nav.Link>
-          <Nav.Link href="">Contact</Nav.Link>
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#skills">Skills</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
@@ -65,9 +70,9 @@ function Contact() {
       <div className="title">Contact</div>
       <div className="email">js980303@gmail.com</div>
       <div className="contact-icons">
-        <img src="img/github.png" className="contact-icon"></img>
-        <img src="img/instagram.png" className="contact-icon"></img>
-        <img src="img/blog.png" className="contact-icon"></img>
+        <img src="img/github.png" onClick={()=>{window.location.href="https://github.com/HyoRyoung-Yang"}} className="contact-icon"></img>
+        <img src="img/instagram.png" onClick={()=>{window.location.href="https://www.instagram.com/on.__.cloud9"}} className="contact-icon"></img>
+        <img src="img/blog.png" onClick={()=>{window.location.href="https://blog.naver.com/js980303"}} className="contact-icon"></img>
       </div>
       <div className="copyright">2021 NEXT X LIKELION YANGHYORYOUNG - All rights reserved.</div>
     </div>

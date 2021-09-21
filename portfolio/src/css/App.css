@@ -1,15 +1,39 @@
 /* navbar */
-
+a {
+  text-decoration: none; 
+}
 .navbar-wrap {
   background-color: #fffeb7;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
+  font-weight: 600;
+  font-size: 20px;
 }
+
 
 .me-auto {
   margin-right: 0!important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fda2a2;
+}
+
+.navbar-light .navbar-brand{
+  color: #ff8888;
+  font-size: 22px;
+}
+.navbar-brand > span {
+  font-size: 30px;
+  
+}
+
+.blank {
+  height: 50px;
+  width: 100%;
+  background-color: white;
 }
 
 /* home */
@@ -20,18 +44,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
+  padding: 150px 20px 70px 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fda2a2;
+}
+
+.home-title {
+  font-size: 40px;
+  color: #ff8888;
+  font-weight: 700;
+  ;
+}
+
+.btn-primary:focus {
+  background-color: white;
+  color: #ff8888;
 }
 
 .contact-btn {
-  background-color: #ffadad;
   border: 0px solid;
-  margin: 10px;
+  margin: 20px;
+  background-color: white;
+  color: #ff8888;
 }
 
 .contact-btn:hover {
-  background-color: white;
-  color: #ff8888;
+  background-color: #ffadad;
+  color: white;
 }
 
 /* 공통 */
@@ -40,9 +80,9 @@
   text-align: center;
   border-bottom: 3px solid #ffdac7;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 35px;
   color: #ff8888;
-  margin: 10px;
+  margin: 10px 0 20px 0;
 }
 
 .wrap {
@@ -79,6 +119,7 @@
   font-size: 40px;
   margin: 20px;
   font-weight: 700;
+  color: black;
 }
 .contact-icons{
   border-radius: 5px;
@@ -93,6 +134,8 @@
 .contact-icon {
   height: 50px;
   margin: 0 10px;
+
+  cursor: pointer;
 }
 
 .copyright {

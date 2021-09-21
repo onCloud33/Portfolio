@@ -16,7 +16,7 @@ function Project() {
             term : '2021/5 ~',
             link : 'https://ykring.site',
             img: 'img/codok.png',
-            final : ''
+            final : '추후에 보완하여 NodeJS와 React로 개발할 예정입니다.'
         },
         {
             id : 1,
