@@ -26,6 +26,12 @@
 .contact-btn {
   background-color: #ffadad;
   border: 0px solid;
+  margin: 10px;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: #ff8888;
 }
 
 /* 공통 */
@@ -62,3 +68,35 @@
   margin: 10px;
 }
 
+/* contact */
+.contact-wrap{
+  background-color: #fffeb7;
+  margin: 0;
+}
+
+.email{
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+  font-weight: 700;
+}
+.contact-icons{
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon {
+  height: 50px;
+  margin: 0 10px;
+}
+
+.copyright {
+  margin: 10px;
+  font-size: 15px;
+  color: #ffadad;
+}

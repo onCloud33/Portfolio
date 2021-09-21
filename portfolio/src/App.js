@@ -17,7 +17,7 @@ function App() {
       <About />
       <Skills />
       <Project />
-
+      <Contact />
     </div>
   );
 }
@@ -59,4 +59,18 @@ function Skills() {
   )
 }
 
+function Contact() {
+  return (
+    <div className="contact-wrap wrap">
+      <div className="title">Contact</div>
+      <div className="email">js980303@gmail.com</div>
+      <div className="contact-icons">
+        <img src="img/github.png" className="contact-icon"></img>
+        <img src="img/instagram.png" className="contact-icon"></img>
+        <img src="img/blog.png" className="contact-icon"></img>
+      </div>
+      <div className="copyright">2021 NEXT X LIKELION YANGHYORYOUNG - All rights reserved.</div>
+    </div>
+  )
+}
 export default App;

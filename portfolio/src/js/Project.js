@@ -1,3 +1,5 @@
+ /*eslint-disable*/
+
 import { useState } from 'react';
 import '../css/Project.css'
 
@@ -7,49 +9,53 @@ function Project() {
             id : 0,
             title : '코독(Codok)',
             intro : '대학생 독강 친구 매칭 플랫폼',
-            skill : 'Django',
+            skill : ['Django', 'html', 'css', 'js'],
             explanation : ['시간표 자동등록(블랙보드 연동)', '강의별 익명 게시판', '채팅'],
             my_role : ['시간표 자동 등록'],
             etc : ['NEXT-LikeLion 9기 해커톤 1등 수상', '고려대학교 크림슨 창업지원단 초기창업패키지'],
             term : '2021/5 ~',
             link : 'https://ykring.site',
-            img: 'img/codok.png'
+            img: 'img/codok.png',
+            final : ''
         },
         {
             id : 1,
             title : '연고링',
             intro : '대학생 랜덤 통화 서비스 (Beta 출시)',
-            skill : 'Django',
+            skill : ['Django', 'AgoraAPI', 'html', 'css', 'js'],
             explanation : ['랜덤 통화', '익명 커뮤니티', '쪽지'],
             my_role : ['통화 프론트 개발', '익명 커뮤니티 기능 개발'],
             etc : [],
             term : '2021/7 ~ 2021/9',
             link : 'https://ykring.site',
-            img: 'img/yonkoring.jpeg'
+            img: 'img/yonkoring.jpeg',
+            final : ''
         },
         {
             id : 2,
             title : '링쿠(LINKU)',
-            intro : '콘텐츠 기반 1:1 커리어 대화 플랫폼 (Alpha 출시)',
-            skill : 'Django',
+            intro : '콘텐츠 기반 1:1 커리어 대화 플랫폼 (Alpha 출시 예정)',
+            skill : ['Django', 'html', 'css', 'js'],
             explanation : ['시간표 자동등록(블랙보드 연동)', '강의별 익명 게시판', '채팅'],
-            my_role : ['시간표 자동 등록'],
+            my_role : ['예약기능 전반 개발'],
             etc : ['고려대학교 파이빌 입주'],
             term : '2021/8 ~ 2021/9',
             link : 'https://ykring.site',
-            img: 'img/linku.png'
+            img: 'img/linku.png',
+            final : ''
         },
         {
             id : 3,
             title : "Ryoung's Portfolio",
             intro : '저의 포트폴리오 사이트입니다.',
-            skill : 'React',
+            skill : ['React'],
             explanation : [],
             my_role : [],
             etc : [],
             term : '2021/9 ~',
             link : 'https://ykring.site',
-            img: 'img/linku.png'
+            img: 'img/linku.png',
+            final : '현재 보고 계신 포트폴리오 사이트입니다. 제가 React로 처음 개발한 프로젝트입니다. '
         }]
     )
 
@@ -72,12 +78,12 @@ function Project() {
                 {
                     projects.map(function(project, i){
                         return(
-                            <div className="project-container">
+                            <div className={toggle[i]===true? `toggle${i} project-container` :"project-container"}>
                             <div className={"project"+i}>
                                 <div className="background">
                                     <div className="pro-title">{project.title}</div>
                                     <div className="pro-intro">{project.intro}</div>
-                                    <button onClick={()=>{toggleChange(i); more변경(more=='more'?'close':'more');}}>{more}</button>
+                                    <button onClick={()=>{toggleChange(i);}}>{more}</button>
                                 </div>
                                 {
                                     toggle[i] === true
@@ -101,6 +107,38 @@ function Toggle(props){
        <div className="toggle-wrap">
             <div className="toggle-title">{props.project.title}</div>
             <div className="toggle-intro">{props.project.intro}</div>
+            <ul>
+                {
+                    props.project.etc.map(function(a){
+                        return(<li>{a}</li>)
+                    })
+                }
+                <li>skill : 
+                {
+                    props.project.skill.map(function(a){
+                        return(<span> {a}</span>)
+                    })
+                }
+                </li>
+                <li>기간 : {props.project.term}</li>
+                {props.project.explanation[0]?<li>주요 기능</li> :null}
+                <ul>
+                {
+                    props.project.explanation.map(function(a){
+                        return(<li>{a}</li>)
+                    })
+                }
+                </ul>
+                {props.project.explanation[0]?<li>My role</li> :null}
+                <ul>
+                {
+                    props.project.my_role.map(function(a){
+                        return(<li>{a}</li>)
+                    })
+                }
+                </ul>
+                <li>{props.project.final}</li>
+            </ul>
        </div>
     )
 }

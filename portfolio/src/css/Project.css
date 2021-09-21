@@ -4,7 +4,7 @@
 @media screen and (min-width: 400px) {
     .Projects {width: 50%;}
 }
-.Projects {
+.Projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +53,19 @@
     margin: 15px auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
+
+.toggle0{
+    height: 700px;
+}
+.toggle1{
+    height: 700px;
+}
+.toggle2{
+    height: 700px;
+}
+.toggle3{
+    height: 700px;
+}
 /*  */
 .background {
     width: 100%;
@@ -87,6 +100,5 @@
 .toggle-wrap {
     width: 100%;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    
 }
